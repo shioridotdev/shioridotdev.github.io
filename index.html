@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ドット(@shioridotdev)</title>
+    <meta name="description" content="ドットと申します。病気は何故私を選んだろう。Software プログラマー、FoodiesとArcade 放送、8ビット中毒者。">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="invert.png" as="image">
+</head>
+<body>
+    <div id="theme-switcher" class="theme-switcher">
+        <i class="fa-solid fa-lightbulb lightbulb"></i>
+    </div>
+    <div class="container">
+        <img src="normal.png" alt="banner" class="banner">
+        <div class="title">
+            <div class="maintitle">ドット</div>
+            <div class="subtitle">ドットと申します</div>
+            <div class="link">
+                <ul>
+                    <li><a target="_blank" href="https://x.com/shioridotdev"><i class="fa-brands fa-x-twitter twitter"></i></a></li>
+                    <li><a target="_blank" href="https://github.com/shioridotdev"><i class="fa-brands fa-github github"></i></a></li>
+                    <li><a target="_blank" href="https://github.com/sponsors/shioridotdev"><i class="fa-brands fa-github githubs"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="title">
+            <div class="maintitle">OURダンジョン</div>
+            <div class="subtitle">日本のゲーム開発スタジオ</div>
+            <div class="link">
+                <ul>
+                    <li><a target="_blank" href="https://x.com/ourdungeon"><i class="fa-brands fa-x-twitter twitter"></i></a></li>
+                    <li><a target="_blank" href="https://github.com/ourdungeon"><i class="fa-brands fa-github github"></i></a></li>
+                    <li><a target="_blank" href="https://github.com/sponsors/ourdungeon"><i class="fa-brands fa-github githubs"></i></a></li>
+                    <li><a target="_blank" href="https://discord.gg/ourdungeon"><i class="fa-brands fa-discord discord"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("theme-switcher").addEventListener("click", function() {
+            document.body.classList.toggle("dark-theme");
+            const img = document.querySelector(".container img");
+            if (document.body.classList.contains("dark-theme")) {
+                img.src = "invert.png";
+            } else {
+                img.src = "normal.png";
+            }
+        });
+    </script>
+</body>
+</html>

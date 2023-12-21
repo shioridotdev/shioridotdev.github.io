@@ -1,0 +1,143 @@
+html,
+*,
+:after {
+	font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	box-sizing: border-box;
+	word-spacing: 1px;
+	margin: 0;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-size: 16px;
+}
+
+.theme-switcher {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.dark-theme {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.dark-theme .container {
+	background-color: #000000;
+}
+
+.dark-theme .title,
+.dark-theme .subtitle,
+.dark-theme .maintitle,
+.dark-theme .link li a {
+	color: #ffffff;
+}
+
+.container {
+    background-color: #ffffff;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.link li a {
+	text-decoration: none;
+	color: #000000;
+	cursor: default;
+}
+
+.link i {
+	font-size: 20px;
+	vertical-align: middle;
+}
+
+.link .twitter:hover {
+	color: #1da1f2;
+}
+
+.link .twitch:hover {
+	color: #6441a4;
+}
+
+.link .itch:hover {
+	color: #fa5c5c;
+}
+
+.link .paypal:hover {
+	color: #253b80;
+}
+
+.link .discord:hover {
+	color: #7289da;
+}
+
+.link .github:hover {
+	color: #999999;
+}
+
+.link .patreon:hover {
+	color: #FF424D;
+}
+
+.link .githubs:hover {
+	color: #e597df;
+}
+
+.link .kofi:hover {
+	color: #FBAA19;
+}
+
+.link ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+.link ul li {
+	display: inline;
+}
+
+.title {
+	margin-bottom: 2em;
+}
+
+.maintitle {
+	font-weight: 500;
+	color: #000000;
+}
+
+.subtitle {
+	font-weight: 300;
+	color: #000000;
+}
+
+.subtitle {
+	font-size: 14px;
+	word-spacing: 5px;
+	padding-bottom: 10px;
+}
+
+.dark-theme .maintitle {
+	font-weight: 400;
+}
+.dark-theme .subtitle {
+	font-weight: 200;
+}
